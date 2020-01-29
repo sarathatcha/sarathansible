@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: Pinging all nodes
+    ping:
+  - name: Install tree
+    apt:
+     name: tree
